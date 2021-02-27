@@ -8,3 +8,14 @@
     width: 224px;
     border-radius:50%;
 }
+.user button{
+    height:40px;
+    width:200px;
+    background-color:  #f9b2c3;
+    border: 1px solid black;
+    border-radius:10px;
+    padding: 5px;
+}
+.user button:hover{
+    cursor: pointer;
+}

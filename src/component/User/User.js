@@ -1,7 +1,7 @@
 import React from 'react';
 import './User.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faPlus } from '@fortawesome/free-solid-svg-icons'
 
 
 const User = (props) => {
@@ -13,6 +13,7 @@ const User = (props) => {
             <img src={img} alt=""/>
             <h5>Cell: {phone}</h5>
             <p><small>Email: {email}</small></p>
+            <button> <FontAwesomeIcon icon={faPlus}/> {" "} Add Friend</button>
         </div>
     );
 };

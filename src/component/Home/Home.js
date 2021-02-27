@@ -15,7 +15,7 @@ const Home = () => {
         <div className='home'>
             <div className='user-container'>
                 {
-                    user.map(user => <User user = {user}></User>)
+                    user.map(user => <User user = {user} key = {user.id}></User>)
                 }
             </div>
             <div className ='cart-container'>
