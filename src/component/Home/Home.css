@@ -1,0 +1,11 @@
+.home{
+    display:flex;
+    text-align:center;
+}
+.user-container{
+    width: 60%;
+    border-right: 1px solid gray;
+}
+.cart-container{
+    width:40%
+}
