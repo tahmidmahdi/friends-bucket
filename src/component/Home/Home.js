@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css'
+import userData from '../../data/data.json'
+import User from '../User/User';
 
 const Home = () => {
+    const[user, setUser] = useState([]);
+    useEffect(() => {
+        // console.log(userData);
+        setUser(userData);
+
+    })
+    
     return (
         <div className='home'>
             <div className='user-container'>
-                <h1>This will contain user info</h1>
+                {
+                    user.map(user => <User user = {user}></User>)
+                }
             </div>
             <div className ='cart-container'>
                 <h1>This will contain cart</h1>

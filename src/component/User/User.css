@@ -1,0 +1,10 @@
+.user{
+    margin: 40px;
+    /* background-color:#fd5517 */
+    ;
+}
+.user img{
+    height: 224px;
+    width: 224px;
+    border-radius:50%;
+}
