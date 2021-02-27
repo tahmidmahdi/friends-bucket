@@ -2,8 +2,15 @@ import React, { useEffect, useState } from 'react';
 import './Home.css'
 import userData from '../../data/data.json'
 import User from '../User/User';
+import Cart from '../Cart/Cart';
 
 const Home = () => {
+    const [cart, setCart] = useState([])
+    const handleAddClick = (props) => {
+        const newCart = [...cart, props];
+        setCart(newCart); 
+    }
+    // console.log(cart);
     const[user, setUser] = useState([]);
     useEffect(() => {
         // console.log(userData);
@@ -15,11 +22,11 @@ const Home = () => {
         <div className='home'>
             <div className='user-container'>
                 {
-                    user.map(user => <User user = {user} key = {user.id}></User>)
+                    user.map(user => <User user = {user} key = {user.id} handleAddClick={handleAddClick}></User>)
                 }
             </div>
             <div className ='cart-container'>
-                <h1>This will contain cart</h1>
+                <Cart cart={cart}></Cart>
             </div>
             
         </div>
