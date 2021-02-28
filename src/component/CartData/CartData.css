@@ -1,0 +1,7 @@
+.cart-data{
+    border-bottom: 1px solid black;
+    border-left: 1px solid gray;
+}
+.cart-data img{
+    border-radius: 50%;
+}
