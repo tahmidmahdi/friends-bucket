@@ -6,7 +6,7 @@ import { faCoffee, faPlus } from '@fortawesome/free-solid-svg-icons'
 
 const User = (props) => {
     // console.log(props);
-    const {name, email, phone, img} = props.user;
+    const {name, email, phone, img, salary} = props.user;
     return (
         <div className="user">
             <h1>This is: {name}</h1>

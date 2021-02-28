@@ -19,16 +19,19 @@ const Home = () => {
     })
     
     return (
-        <div className='home'>
-            <div className='user-container'>
-                {
-                    user.map(user => <User user = {user} key = {user.id} handleAddClick={handleAddClick}></User>)
-                }
+        <div>
+            <div className='home'>
+                <div className='user-container'>
+                    {
+                        user.map(user => <User user = {user} key = {user.id} handleAddClick={handleAddClick}></User>)
+                    }
+                </div>
+                <div className ='cart-container'>
+                    <Cart cart={cart}></Cart>
+                </div>
+               
             </div>
-            <div className ='cart-container'>
-                <Cart cart={cart}></Cart>
-            </div>
-            
+            <footer className ='footer'>All rights reserved by This User.</footer>
         </div>
     );
 };
